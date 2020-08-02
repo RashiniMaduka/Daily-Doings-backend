@@ -7,6 +7,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import com.in28minutes.rest.webservices.restfulwebservices.todo.Todo;
+import org.springframework.web.bind.annotation.CrossOrigin;
+
+@CrossOrigin(origins = "http://localhost:4200")
 @Service
 public class TodoHardcodedService {
     private static List<Todo> todos=new ArrayList();
@@ -15,6 +18,8 @@ public class TodoHardcodedService {
         todos.add(new Todo(2,"in28minutes","juyydhc",new Date(),false));
         todos.add(new Todo(3,"in28minutes","knkjnyfrjdhc",new Date(),false));
         todos.add(new Todo(4,"in28minutes","kajkshduwduwlldhc",new Date(),false));
+        todos.add(new Todo(5,"in2inutes","kauwduwlldhc",new Date(),false));
+
 
     }
     public List<Todo> findAll(){
